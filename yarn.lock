@@ -4698,17 +4698,10 @@
   dependencies:
     "@volar/source-map" "1.10.0"
 
-"@volar/source-map@1.10.0":
+"@volar/source-map@1.10.0", "@volar/source-map@~1.10.0":
   version "1.10.0"
   resolved "https://registry.yarnpkg.com/@volar/source-map/-/source-map-1.10.0.tgz#2413eb190ce69fc1a382f58524a3f82306668024"
   integrity sha512-/ibWdcOzDGiq/GM1JU2eX8fH1bvAhl66hfe8yEgLEzg9txgr6qb5sQ/DEz5PcDL75tF5H5sCRRwn8Eu8ezi9mw==
-  dependencies:
-    muggle-string "^0.3.1"
-
-"@volar/source-map@~1.10.0":
-  version "1.10.1"
-  resolved "https://registry.yarnpkg.com/@volar/source-map/-/source-map-1.10.1.tgz#b806845782cc615f2beba94624ff34a700f302f5"
-  integrity sha512-3/S6KQbqa7pGC8CxPrg69qHLpOvkiPHGJtWPkI/1AXCsktkJ6gIk/5z4hyuMp8Anvs6eS/Kvp/GZa3ut3votKA==
   dependencies:
     muggle-string "^0.3.1"
 
@@ -6238,10 +6231,10 @@ cose-base@^2.2.0:
   dependencies:
     layout-base "^2.0.0"
 
-cosmiconfig@8.0.0, cosmiconfig@8.1.3, cosmiconfig@^7.0.0, cosmiconfig@^8.1.0, cosmiconfig@^8.1.3:
-  version "8.1.3"
-  resolved "https://registry.yarnpkg.com/cosmiconfig/-/cosmiconfig-8.1.3.tgz#0e614a118fcc2d9e5afc2f87d53cd09931015689"
-  integrity sha512-/UkO2JKI18b5jVMJUp0lvKFMpa/Gye+ZgZjKD+DGEN9y7NRcf/nK1A0sp67ONmKtnDCNMS44E6jrk0Yc3bDuUw==
+cosmiconfig@8.0.0, cosmiconfig@8.2.0, cosmiconfig@^7.0.0, cosmiconfig@^8.1.0, cosmiconfig@^8.1.3:
+  version "8.2.0"
+  resolved "https://registry.yarnpkg.com/cosmiconfig/-/cosmiconfig-8.2.0.tgz#f7d17c56a590856cd1e7cee98734dca272b0d8fd"
+  integrity sha512-3rTMnFJA1tCOPwRxtgF4wd7Ab2qvDbL8jX+3smjIbS4HlZBagTlpERbdN7iAbWlrfxE3M8c27kTwTawQ7st+OQ==
   dependencies:
     import-fresh "^3.2.1"
     js-yaml "^4.1.0"
