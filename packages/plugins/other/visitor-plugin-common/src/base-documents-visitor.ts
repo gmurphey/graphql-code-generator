@@ -288,7 +288,7 @@ export class BaseDocumentsVisitor<
 
     const operationVariables = new DeclarationBlock({
       ...this._declarationBlockConfig,
-      blockTransformer: t => this.applyVariablesWrapper(t),
+      blockTransformer: t => this.applyVariablesWrapper(t, operationType),
     })
       .export()
       .asKind('type')

@@ -267,4 +267,28 @@ export interface TypeScriptDocumentsPluginConfig extends RawDocumentsConfig {
    * ```
    */
   maybeValue?: string;
+  /**
+   * @description Create union type for query variables with `undefined`
+   * @default false
+   *
+   * @exampleMarkdown
+   * ## Allow undefined
+   * ```ts filename="codegen.ts"
+   *  import type { CodegenConfig } from '@graphql-codegen/cli';
+   *
+   *  const config: CodegenConfig = {
+   *    // ...
+   *    generates: {
+   *      'path/to/file.ts': {
+   *        plugins: ['typescript'],
+   *        config: {
+   *          allowUndefinedQueryVariables: true
+   *        },
+   *      },
+   *    },
+   *  };
+   *  export default config;
+   * ```
+   */
+  allowUndefinedQueryVariables?: boolean
 }

@@ -133,9 +133,9 @@ export class TypeScriptDocumentsVisitor extends BaseDocumentsVisitor<
     return ';';
   }
 
-  protected applyVariablesWrapper(variablesBlock: string): string {
+  protected applyVariablesWrapper(variablesBlock: string, operationType: string): string {
     const prefix = this.config.namespacedImportName ? `${this.config.namespacedImportName}.` : '';
 
-    return `${prefix}Exact<${variablesBlock === '{}' ? `{ [key: string]: never; }` : variablesBlock}>`;
+    return `${prefix}Exact<${variablesBlock === '{}' ? `{ [key: string]: never; }` : variablesBlock}>${this.config.allowUndefinedQueryVariables && operationType === 'Query' ? ' | undefined' : ''}`;
   }
 }
